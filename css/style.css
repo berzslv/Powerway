@@ -1354,10 +1354,7 @@ ul.nav.navbar-nav.nav-center {
     padding: 3.5em 5em; 
 }
 .address-right iframe { 
-     
-	max-height: 100%;
-  height: 200px;
-  width: auto;
+    min-height: 355px; 
 }
 }
 @media(max-width:1024px){
@@ -1631,7 +1628,7 @@ ul.nav.navbar-nav.navbar-right {
     padding: 2.5em 4em;
 }
 .address-right iframe {
-
+    min-height: 200px;
 }
 .subscribe input[type="text"] { 
     padding: 0.8em;
@@ -1837,5 +1834,19 @@ p {
 img {
   display: block;
 }
-
-/*-- //responsive-dessign --*/
+.correct,
+.incorrect {
+  border: 0px solid red;
+  display: inline-block;
+}
+.incorrect img {
+  max-height: 100%;
+  height: 100px;
+  width: 100px;
+}
+.correct img {
+  max-height: 100%;
+  height: 200px;
+  width: auto;
+}
+/*-- //responsive-design --*/
