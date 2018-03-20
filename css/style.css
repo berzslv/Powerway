@@ -1854,4 +1854,21 @@ img {
   max-height: 60%;
 
 }
+
+
+
+
+
+
+.crop {
+    height: 250px;
+    /*width: 400px;*/
+    overflow: hidden;
+
+}
+.crop img {
+    height: 100%;
+    width: auto;
+}
+
 /*-- //responsive-design --*/
