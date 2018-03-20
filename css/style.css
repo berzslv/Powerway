@@ -1861,20 +1861,10 @@ img {
 
 
 .crop {
-    height: 250px;
-    /*width: 400px;*/
-    overflow: hidden;
-
-}
-.crop img {
-    height: 100%;
-    width: auto;
-		 /* IE 8 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  /* IE 5-7 */
-  filter: alpha(opacity=100);
-  /* modern browsers */
-  opacity: 100;
-}
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+	}
 
 /*-- //responsive-design --*/
