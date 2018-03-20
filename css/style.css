@@ -1869,6 +1869,12 @@ img {
 .crop img {
     height: 100%;
     width: auto;
+		 /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* IE 5-7 */
+  filter: alpha(opacity=100);
+  /* modern browsers */
+  opacity: 100;
 }
 
 /*-- //responsive-design --*/
