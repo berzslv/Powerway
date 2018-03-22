@@ -3,7 +3,9 @@ Author:  Berzslv
 --><!DOCTYPE html>
 <html lang="en">
   <head>
- 
+  
+
+
   
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115883340-1"></script>
@@ -56,7 +58,7 @@ Author:  Berzslv
 
   </head>
   <body>
-    <!-- banner -->
+    <!-- banneris -->
     <div class="banner">
       <div class="cd-radial-slider-wrapper">
         <div class="header agileinfo-header"><!-- header -->
@@ -78,7 +80,7 @@ Author:  Berzslv
                   <li><a href="index.html" class="w3ls-hover active">Sākums</a></li>
                   <li><a href="#about" class="btn w3ls-hover scroll">Pakalpojumi</a></li>
                   <li><a href="#services" class="btn w3ls-hover scroll">Cenas</a></li>
-                  <li><a href="#team" class="btn w3ls-hover scroll">Noteikumi</a></li>
+                  <li><a href="#noteikumi" class="btn w3ls-hover scroll">Noteikumi</a></li>
                   <li><a href="#gallery" class="btn w3ls-hover scroll">Galerija</a></li>
                   <li><a href="#contact" class="btn w3ls-hover scroll">Kontakti</a></li>
                 </ul>
@@ -194,8 +196,8 @@ Author:  Berzslv
         </ul>
         <!-- .cd-radial-slider-navigation --> </div>
       <!-- .cd-radial-slider-wrapper --> </div>
-    <!-- //banner -->
-    <!-- about -->
+    <!-- //banneris -->
+    <!-- Par Mums -->
     <div class="about" id="about">
       <div class="container">
         <div class="agileits-title">
@@ -208,19 +210,72 @@ Author:  Berzslv
           </div>
           <div class="clearfix"> </div>
         </div>
-        <div class="about-w3lsrow">
-          <div class="col-md-7 col-sm-7 w3about-img">
-            <div class="w3about-text">
+		
+		
+		
+
+		
+		<!-- Atvert Modal -->
+		<div class="about-w3lsrow col-md-7 col-sm-7">
+<img id="myImg"  alt=""  class="w3about-img">
+<div class="w3about-text">
               <h5 class="w3l-subtitle">- Kas mēs esam</h5>
-              <p>Pārvadātāji ar ilgu gadu pieredzi pa Eiropas ceļiem. Tiekam galā ar nestandarta kravām. </p>
+              <p>Pārvadātāji ar ilgu gadu pieredzi pa Eiropas ceļiem. Tiekam galā ar nestandarta kravām.</p>
             </div>
-          </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Aizvert -->
+  <span class="close">&times;</span>
+
+  <!-- Bilde -->
+  <img class="modal-content" src="images/img1.jpg"">
+
+  <!-- Teksts bildei -->
+  <div id="caption"></div>
+</div>
+		
+		
+		
+       
           <div class="clearfix"> </div>
         </div>
       </div>
     </div>
-    <!-- //about -->
-    <!-- services -->
+	
+	
+			<!-- Palielinat bildi -->
+			  <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+  
+  </script>
+	<!-- //Palielinat bildi -->	
+	
+	
+	
+	
+    <!-- //Par mums -->
+    <!-- Services (cenas) -->
     <div class="about services" id="services">
       <div class="container">
         <div class="agileits-title">
@@ -293,10 +348,10 @@ Author:  Berzslv
 </center>
       </div>
     </div>
-    <!-- //services -->
+    <!-- //services(cenas) -->
 
-    <!-- team -->
-    <div id="team" class="team">
+    <!-- Noteikumi -->
+    <div id="noteikumi" class="team">
       <div class="container">
         <div class="agileits-title">
           <div class="col-md-6 agileits-title-left">
@@ -384,7 +439,7 @@ function myFunction() {
 }
 </script>
 </div></div>
-
+<!-- //Noteikumi -->
 	
 	<!-- gallery -->
 
@@ -406,10 +461,6 @@ function myFunction() {
         </div>
       </div>
 	  
-	  
-
-	  
-
 	  
       <div class="agileinfo-gallery-row">
         <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids "> <a href="images/img6.jpg"
@@ -452,9 +503,9 @@ function myFunction() {
               <p>Teksts.</p>
             </div>
           </a> </div>
-        <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids"> <a href="images/img9.jpg"
+        <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids"> <a href="images/img2.jpg"
 
-            class="imghvr-hinge-right figure"> <img src="images/img9.jpg" alt=""
+            class="imghvr-hinge-right figure"> <img src="images/img2.jpg" alt=""
 
               title="Smart Buzz Image">
             <div class="agile-figcaption">
@@ -462,9 +513,9 @@ function myFunction() {
               <p>Teksts.</p>
             </div>
           </a> </div>
-        <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids "> <a href="images/img3.jpg"
+        <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids "> <a href="images/img2.jpg"
 
-            class="imghvr-hinge-right figure"> <img src="images/img3.jpg" alt=""
+            class="imghvr-hinge-right figure"> <img src="images/img2.jpg" alt=""
 
               title="Smart Buzz Image" >
             <div class="agile-figcaption">
@@ -483,8 +534,8 @@ function myFunction() {
             </div>
           </a> 
 		  </div>
-        <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids"> <a  href="images/img2.jpg"
-            class="imghvr-hinge-right figure"> <img src="images/img2.jpg" alt=""
+        <div class="col-md-3 col-sm-3 col-xs-6 w3gallery-grids"> <a  href="images/img3.jpg"
+            class="imghvr-hinge-right figure"> <img src="images/img3.jpg" alt=""
               title="Smart Buzz Image">
             <div class="agile-figcaption">
               <h4>Datums.</h4>
